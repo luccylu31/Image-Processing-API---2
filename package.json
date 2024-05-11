@@ -1,0 +1,40 @@
+{
+  "name": "image-api-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "nodemon src/index.ts",
+    "lint": "eslint src/**/*.ts",
+    "prettier": "prettier --config .prettierrc src/**/*.ts --write",
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/sharp": "^0.32.0",
+    "axios": "^1.6.8",
+    "express": "^4.19.2",
+    "jasmine-spec-reporter": "^7.0.0",
+    "sharp": "^0.33.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "@types/express": "^4.17.21",
+    "@types/jasmine": "^5.1.4",
+    "@types/supertest": "^6.0.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.34.1",
+    "globals": "^15.1.0",
+    "jasmine": "^5.1.0",
+    "nodemon": "^3.1.0",
+    "prettier": "^2.5.1",
+    "supertest": "^7.0.0",
+    "typescript-eslint": "^7.8.0"
+  }
+}
